@@ -31,7 +31,7 @@ public class Classes implements Serializable{
 	private int fees;
 	
 	@Enumerated(EnumType.STRING)
-	private List<Days> days;
+	private Days days;
 	
 	@ManyToOne
 	private Course course;
@@ -40,7 +40,7 @@ public class Classes implements Serializable{
 	private List<Teacher> teachers; 
 	
 	@ManyToOne
-	private Teacher headTeacher;
+	private Teacher head;
 	
 	private enum Days{
 		MON, TUE, WED, THU, FRI, SAT, SUN
